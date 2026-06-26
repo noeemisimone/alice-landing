@@ -881,7 +881,10 @@
 		}
 
 		.footer-flim {
-			padding: 2rem 1.5rem 0;
+			/* padding-bottom dà aria sotto la wordmark gigante: con line-height 0.72
+			   le lettere sforano il loro box e, senza questo spazio, l'overflow:hidden
+			   del footer le taglierebbe in basso su mobile. */
+			padding: 2rem 1.5rem 1rem;
 		}
 		.ff-top {
 			margin: -2rem -1.5rem 0;
