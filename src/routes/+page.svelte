@@ -8,6 +8,10 @@
 	import { SITE_URL, DEFAULT_OG_IMAGE } from '$lib/seo';
 	import { t, locale } from '$lib/i18n';
 
+	// Gli unici 2 link esterni del contenuto: biglietteria (Clappit, TICKETS_URL)
+	// e iscrivi la tua opera (FilmFreeway). Usati nella hero e nel blocco CTA.
+	const FILMFREEWAY_URL = 'https://filmfreeway.com/alicenellacitta';
+
 	// JSON-LD Event: dà a Google/AI i dati strutturati del festival (date, luogo,
 	// organizzatore) → eleggibilità ai rich result e migliore comprensione GEO.
 	// NOTA: date placeholder, sostituire con quelle ufficiali dell'edizione.
@@ -151,12 +155,26 @@
 		{/key}
 
 		<div class="hero-bottom">
-			<div class="hero-meta">
-				<span>{$t('hero.meta_edition')}</span>
-				<span>{$t('hero.meta_date')}</span>
-				<span>{$t('hero.meta_city')}</span>
+			<div class="hero-info">
+				<div class="hero-meta">
+					<span>{$t('hero.meta_edition')}</span>
+					<span>{$t('hero.meta_date')}</span>
+					<span>{$t('hero.meta_city')}</span>
+				</div>
+				<a class="scroll-cue" href="#manifesto">{$t('common.scroll')} <span class="arrow">↓</span></a>
 			</div>
-			<a class="scroll-cue" href="#manifesto">{$t('common.scroll')} <span class="arrow">↓</span></a>
+
+			<!-- CTA subito disponibili: stessi 2 link esterni del sito -->
+			<div class="hero-actions">
+				<a class="hero-link" href={FILMFREEWAY_URL} target="_blank" rel="noopener">
+					{$locale === 'it' ? 'Iscrivi la tua opera' : 'Submit your film'}
+					<span class="hero-arrow">↗</span>
+				</a>
+				<a class="hero-btn" href={TICKETS_URL} target="_blank" rel="noopener">
+					{$locale === 'it' ? 'Biglietteria' : 'Tickets'}
+					<span class="hero-arrow">↗</span>
+				</a>
+			</div>
 		</div>
 	</div>
 </section>
@@ -176,8 +194,15 @@
 <!-- ─────────────────────── CHI SIAMO ─────────────────────── -->
 <section class="overlap-section" id="chi-siamo">
 	<div class="block-overlap">
-		<!-- PLACEHOLDER immagine: ritaglio SVG da implementare in seguito -->
-		<div class="block-image placeholder" use:clipReveal={{ direction: 'right' }} aria-hidden="true"></div>
+		<div class="block-image" use:clipReveal={{ direction: 'right' }}>
+			<img
+				src="/images/chi-siamo.jpg"
+				alt={$locale === 'it'
+					? 'Pubblico giovane in sala durante una proiezione del festival'
+					: 'Young audience in a cinema during a festival screening'}
+				loading="lazy"
+			/>
+		</div>
 		<div class="block-text" use:reveal={{ delay: 120 }}>
 			<p class="section-label inset">{$t('chi_siamo.label')}</p>
 			{#key $locale}
@@ -271,7 +296,7 @@
 			</p>
 			<a
 				class="big-cta"
-				href="https://filmfreeway.com/alicenellacitta"
+				href={FILMFREEWAY_URL}
 				target="_blank"
 				rel="noopener"
 			>
@@ -361,6 +386,59 @@
 		justify-content: space-between;
 		align-items: flex-end;
 		gap: 2rem;
+	}
+
+	.hero-info {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1.25rem;
+	}
+
+	/* CTA hero, in basso a destra sopra il video scuro */
+	.hero-actions {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: 0.85rem;
+	}
+
+	.hero-link,
+	.hero-btn {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.45rem;
+		font-weight: 700;
+		font-size: 0.85rem;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+
+	.hero-link {
+		color: #fff;
+		padding-bottom: 2px;
+		border-bottom: 2px solid transparent;
+		transition: border-color 0.15s ease;
+	}
+
+	.hero-link:hover {
+		border-bottom-color: #fff;
+	}
+
+	.hero-btn {
+		background: #fff;
+		color: #0a0a0a;
+		padding: 0.8rem 1.4rem;
+		transition:
+			background 0.2s ease,
+			transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+	}
+
+	.hero-btn:hover {
+		background: #e7e7e7;
+		transform: translateY(-2px);
 	}
 
 	.hero-meta {
@@ -475,18 +553,6 @@
 		height: 100%;
 		object-fit: cover;
 		display: block;
-	}
-
-	/* Rettangolo placeholder finché non si implementa il ritaglio SVG dell'immagine */
-	.block-image.placeholder {
-		background:
-			repeating-linear-gradient(
-				45deg,
-				#e2e2e2,
-				#e2e2e2 16px,
-				#d6d6d6 16px,
-				#d6d6d6 32px
-			);
 	}
 
 	.block-text {
@@ -1401,7 +1467,8 @@
 	/* ===================== RESPONSIVE ===================== */
 	@media (max-width: 900px) {
 		.hero-content { padding: 2rem 1.5rem; gap: 1.5rem; }
-		.hero-bottom { flex-direction: column; align-items: flex-start; }
+		.hero-bottom { flex-direction: column-reverse; align-items: flex-start; gap: 1.75rem; }
+		.hero-actions { align-items: flex-start; width: 100%; }
 		.manifesto { grid-template-columns: 1fr; gap: 2rem; padding: 5rem 1.5rem; }
 		.overlap-section,
 		.overlap-section.dark { padding: 5rem 1.5rem; }
