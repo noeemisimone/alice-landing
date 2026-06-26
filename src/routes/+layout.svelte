@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import { onMount } from 'svelte';
-	import { t, locale, setLocale, type Locale } from '$lib/i18n';
+	import { t, locale, setLocale, initLocale, type Locale } from '$lib/i18n';
 	import { reveal } from '$lib/reveal';
 
 	let { children } = $props();
@@ -88,6 +88,11 @@
 	});
 
 	onMount(() => {
+		// Apply the visitor's locale after hydration (see initLocale): doing it
+		// here, as a runtime change, is what makes the keyed {@html} titles switch
+		// language for visitors landing directly in English.
+		initLocale();
+
 		const hash = window.location.hash;
 		if (hash && window.location.pathname === '/') {
 			setTimeout(() => {

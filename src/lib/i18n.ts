@@ -22,17 +22,40 @@ function getInitialLocale(): Locale {
 	return 'it';
 }
 
-export const locale = writable<Locale>(getInitialLocale());
+// Server and client BOTH start in Italian, so the SSR markup matches the very
+// first client render (no hydration mismatch). The visitor's real locale is
+// applied AFTER mount via initLocale(), as a runtime change — that runtime
+// change is what makes the {#key $locale} {@html} titles re-render in the right
+// language. (Applying it at init would leave those titles stuck on the SSR
+// language, since {@html} inside {#key} is not reconciled during hydration.)
+export const locale = writable<Locale>('it');
 
 if (browser) {
+	let firstRun = true;
 	locale.subscribe((value) => {
+		document.documentElement.lang = value;
+		// Skip persisting the initial 'it': it would overwrite a previously
+		// saved choice before initLocale() has had the chance to read it.
+		if (firstRun) {
+			firstRun = false;
+			return;
+		}
 		try {
 			localStorage.setItem('locale', value);
 		} catch {
 			// ignore
 		}
-		document.documentElement.lang = value;
 	});
+}
+
+/**
+ * Apply the visitor's locale (saved choice → browser language). MUST be called
+ * from onMount: applying it as a post-hydration runtime change is what forces
+ * the {#key $locale} {@html} titles to switch language correctly.
+ */
+export function initLocale() {
+	if (!browser) return;
+	locale.set(getInitialLocale());
 }
 
 /** Reactive translator. Use as `$t('hero.title')` in templates. */
