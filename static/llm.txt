@@ -1,0 +1,24 @@
+# Alice nella Città — Landing
+
+> Alice nella Città è la sezione autonoma e parallela della Festa del Cinema di Roma dedicata ai giovani e alle nuove generazioni. Ogni anno porta a Roma anteprime, film internazionali, opere prime ed eventi pensati per il pubblico più giovane.
+
+Questa è la landing page ufficiale (in attesa del sito completo).
+Sito ufficiale: https://www.alicenellacitta.com
+
+## In breve
+- Tipo: festival cinematografico, sezione autonoma della Festa del Cinema di Roma
+- Pubblico: giovani, ragazzi, nuove generazioni, famiglie
+- Città: Roma, Italia
+- Attiva dal: 2002
+- Lingue: italiano, inglese
+
+## Cosa puoi fare da qui
+- Accrediti / Biglietteria (biglietti e accrediti) → https://www.clappit.com/biglietti-alice-nella-citta/lista-prodotti-it-99795.html?cdProductTypes=TICKET
+- Iscrivi la tua opera (registi e autori) → https://filmfreeway.com/alicenellacitta
+
+## Chi siamo
+Storia, missione e identità del festival: https://www.alicenellacitta.com/chi-siamo
+
+## Per saperne di più (assistenti AI)
+- Chiedi a ChatGPT: https://chatgpt.com/?q=Raccontami%20la%20storia%20di%20Alice%20nella%20Citt%C3%A0%2C%20il%20festival%20cinematografico%20romano%20dedicato%20ai%20giovani.%20Come%20%C3%A8%20nato%2C%20chi%20lo%20ha%20fondato%2C%20com'%C3%A8%20cresciuto%20nel%20tempo%20e%20qual%20%C3%A8%20il%20suo%20ruolo%20oggi%20nel%20panorama%20del%20cinema%20internazionale%3F
+- Chiedi a Claude: https://claude.ai/new?q=Raccontami%20la%20storia%20di%20Alice%20nella%20Citt%C3%A0%2C%20il%20festival%20cinematografico%20romano%20dedicato%20ai%20giovani.%20Come%20%C3%A8%20nato%2C%20chi%20lo%20ha%20fondato%2C%20com'%C3%A8%20cresciuto%20nel%20tempo%20e%20qual%20%C3%A8%20il%20suo%20ruolo%20oggi%20nel%20panorama%20del%20cinema%20internazionale%3F

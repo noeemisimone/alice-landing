@@ -1,0 +1,385 @@
+{
+	"nav": {
+		"chi_siamo": "About",
+		"programma": "Programme",
+		"professionisti": "Industry",
+		"bando": "Submit",
+		"stampa": "Press",
+		"partner": "Partners",
+		"contatti": "Contact",
+		"biglietti": "Tickets"
+	},
+	"common": {
+		"scroll": "Scroll",
+		"all_films": "All films of the festival →",
+		"discover": "Find out how",
+		"go_box_office": "Go to box office"
+	},
+	"footer": {
+		"address": "Via Benaco, 5 — 00199 Rome · +39 06 85304966",
+		"copyright": "All rights reserved",
+		"home_label": "Alice nella Città — home",
+		"newsletter_title": "Newsletter",
+		"newsletter_done": "Thanks! You're subscribed.",
+		"tagline": "International film festival for young audiences · Rome",
+		"group_festival": "Festival",
+		"group_pro": "Industry"
+	},
+	"hero": {
+		"eyeshot": "XXIV Edition · International Film Festival",
+		"title_html": "More<br />space<br />for those who <em>love</em><br />cinema.",
+		"meta_edition": "Edition XXIV",
+		"meta_date": "October 2026",
+		"meta_city": "Rome"
+	},
+	"manifesto": {
+		"claim_html": "Stories<br />grow up.<br /><em>So do we.</em>",
+		"body": "Alice nella Città is the autonomous parallel section of the Rome Film Festival dedicated to young audiences and new generations. For over twenty years, an open laboratory on cinema, its forms and its protagonists."
+	},
+	"chi_siamo": {
+		"label": "01 — About",
+		"title_html": "Cinema,<br />culture,<br /><em>new voices.</em>",
+		"card1_title": "The manifesto.",
+		"card1_body": "We believe in reversing the festival's boundaries: not just premieres, but interdependence between people, ideas and shared practices. A festival that ties together cinema, city and new generations.",
+		"card2_title": "The founders.",
+		"card2_body_html": "The festival is conceived and directed by <strong>Gianluca Giannelli</strong> and <strong>Fabia Bettini</strong>, who since 2002 have led a cultural project dedicated to cinema for young audiences.",
+		"link": "Learn more about us →"
+	},
+	"stats": {
+		"editions": "Editions",
+		"films": "Films per year",
+		"founded": "Founded",
+		"sections": "Sections"
+	},
+	"programma": {
+		"label": "02 — Programme",
+		"title_html": "14 sections.<br />One single<br /><em>festival.</em>",
+		"items": [
+			{
+				"num": "01",
+				"title": "Competition",
+				"desc": "International premieres in the running for the Alice award."
+			},
+			{
+				"num": "02",
+				"title": "Sintonie",
+				"desc": "A programme line shared with Alberto Barbera, director of the Venice Film Festival."
+			},
+			{
+				"num": "03",
+				"title": "Onde Corte",
+				"desc": "Short films and Academy for emerging young directors."
+			},
+			{
+				"num": "04",
+				"title": "Fuori Sala",
+				"desc": "Cinema beyond the theatres, inside the city's places."
+			}
+		],
+		"link": "Go to the full programme →"
+	},
+	"film": {
+		"label": "03 — Now showing",
+		"title_html": "A<br /><em>selection.</em>",
+		"intro": "Twelve titles from the XXIV edition. Premieres, first features, restorations and special screenings."
+	},
+	"eventi": {
+		"label": "04 — Special events",
+		"title_html": "Meetings,<br />masterclasses,<br /><em>celebrations.</em>",
+		"items": [
+			{
+				"label": "Masterclass",
+				"title": "Kenneth Lonergan",
+				"desc": "A conversation with the Oscar-winning director of Manchester by the Sea, an essential voice in American independent cinema."
+			},
+			{
+				"label": "Meeting",
+				"title": "The filmmakers of Anemone",
+				"desc": "A conversation with the authors of Anemone, the first feature of their generation."
+			},
+			{
+				"label": "Anniversary",
+				"title": "Footloose Celebration",
+				"desc": "A special tribute dedicated to an icon of generational cinema."
+			}
+		]
+	},
+	"biglietti_section": {
+		"label": "05 — Tickets & Accreditation",
+		"title_html": "Live the<br /><em>festival.</em>",
+		"intro": "Buy tickets for screenings, choose a pass for the entire duration of the festival, or request a professional accreditation.",
+		"card_biglietti": {
+			"label": "A — Tickets",
+			"title_html": "Buy<br /><em>online.</em>",
+			"body": "Purchase single tickets, passes and festival passes through the festival's official box office. Sales open in October 2026.",
+			"cta": "Go to box office"
+		},
+		"card_accrediti": {
+			"label": "B — Accreditation",
+			"title_html": "For<br /><em>professionals.</em>",
+			"body": "Accreditations for press, industry, schools and trade operators. All information and procedures to attend the festival professionally.",
+			"cta": "Find out how"
+		}
+	},
+	"partner": {
+		"label": "06 — Partners",
+		"title_html": "With the<br />support <em>of.</em>",
+		"intro": "Alice nella Città is made possible thanks to the contribution and partnership of institutions, cultural organisations and media partners that share our commitment to cinema for new generations."
+	},
+	"contatti": {
+		"label": "07 — Contact",
+		"title_html": "Write to us.<br /><em>Let's talk.</em>",
+		"email_cap": "Email",
+		"phone_cap": "Phone",
+		"address_cap": "Address",
+		"social_cap": "Social",
+		"address_value_html": "Via Benaco, 5<br />00199 Rome, Italy",
+		"link": "All contacts →"
+	},
+	"newsletter": {
+		"label": "08 — Newsletter",
+		"title_html": "Stay in the<br /><em>programme.</em>",
+		"title_success_html": "You're in the<br /><em>programme.</em>",
+		"intro": "Previews, invites to special events and the festival programme in advance, straight to your inbox.",
+		"intro_success": "Thanks for subscribing. You'll receive the first updates of the XXIV edition soon — see you in October.",
+		"placeholder": "Your email...",
+		"submit": "Subscribe",
+		"submitting": "Sending...",
+		"note": "No spam. Just cinema.",
+		"error": "Please enter a valid email address."
+	},
+	"page_chi_siamo": {
+		"eyeshot": "About us",
+		"title_html": "Cinema,<br />culture,<br /><em>new voices.</em>",
+		"lead": "For over twenty years, Alice nella Città has been telling the present through the eyes of young people, giving space to those who love cinema and to stories still waiting to be seen.",
+		"overlap_title_html": "The<br /><em>manifesto.</em>",
+		"sections": [
+			{
+				"title": "The manifesto.",
+				"body": "We believe in reversing the festival's boundaries: not only the pursuit of world premieres, but the interdependence between people, ideas and shared practices. A festival that ties together cinema, city and new generations."
+			},
+			{
+				"title": "The Sintonie section.",
+				"body": "A programme line shared with Alberto Barbera, director of the Venice International Film Festival. A bridge between two festivals, an ongoing dialogue on auteur cinema."
+			},
+			{
+				"title": "Beyond the theatre walls.",
+				"body": "We experiment with new spaces for cinema: screenings on building facades, events at the Auditorium della Nuvola in partnership with EUR Spa, and the new Fuori Sala format that brings films into the city's places."
+			},
+			{
+				"title": "The founders.",
+				"body_html": "The festival is conceived and directed by <strong>Gianluca Giannelli</strong> and <strong>Fabia Bettini</strong>, who for over twenty years have led a cultural project dedicated to cinema for young audiences."
+			}
+		]
+	},
+	"page_programma": {
+		"eyeshot": "Programme · XXIV Edition",
+		"title_html": "All<br />the sections<br />of the <em>festival.</em>",
+		"film_label": "A selection of films in the programme",
+		"film_title_html": "The titles<br /><em>of the festival.</em>",
+		"sections": [
+			{
+				"title": "Competition",
+				"description": "Premieres and first screenings of international feature films competing for the Alice award."
+			},
+			{
+				"title": "Opening Film",
+				"description": "The film that opens the festival, chosen as the manifesto of the edition."
+			},
+			{
+				"title": "Out of Competition",
+				"description": "A selection of must-see works presented outside the official competition."
+			},
+			{
+				"title": "Panorama Italia",
+				"description": "The best of new Italian cinema for young audiences, with the Audience Award."
+			},
+			{
+				"title": "Sintonie",
+				"description": "Programme line shared with Alberto Barbera, director of the Venice Film Festival."
+			},
+			{
+				"title": "Onde Corte — Competition",
+				"description": "International short films in competition from around the world."
+			},
+			{
+				"title": "Onde Corte — Academy",
+				"description": "A space dedicated to emerging young directors and training."
+			},
+			{
+				"title": "Shorts Without Borders",
+				"description": "Short films crossing borders, languages and generations."
+			},
+			{
+				"title": "Quei Ragazzi",
+				"description": "A section dedicated to the storytelling of adolescence and its protagonists."
+			},
+			{
+				"title": "Series",
+				"description": "The best series productions in preview, dedicated to a young audience."
+			},
+			{
+				"title": "Tributes",
+				"description": "Tributes and retrospectives to filmmakers, actors and works that made history."
+			},
+			{
+				"title": "Special Events",
+				"description": "Masterclasses, meetings with filmmakers and joint celebrations."
+			},
+			{
+				"title": "Special Screenings",
+				"description": "Event-screenings open to the city's public, beyond the official calendar."
+			},
+			{
+				"title": "Fuori Sala",
+				"description": "The festival's new format: cinema leaves the theatres and reaches Rome's places."
+			}
+		]
+	},
+	"page_contatti": {
+		"eyeshot": "Contact",
+		"title_html": "Write to us.<br /><em>Let's talk.</em>",
+		"email_cap": "Email",
+		"phone_cap": "Phone",
+		"address_cap": "Address",
+		"box_office_cap": "Box Office",
+		"box_office_value": "Tickets on Clappit",
+		"address_value_html": "Via Benaco, 5<br />00199 Rome, Italy",
+		"overlap_title_html": "Follow us<br /><em>everywhere.</em>",
+		"social_label": "Social"
+	},
+	"page_biglietti": {
+		"eyeshot": "Tickets & Accreditation",
+		"title_html": "Live the<br /><em>festival.</em>",
+		"lead": "Everything you need to attend the XXIV edition: tickets, passes, reductions and professional accreditations.",
+		"block_biglietti_label": "01 — Tickets",
+		"block_biglietti_title_html": "Types<br /><em>and prices.</em>",
+		"ticket_types": [
+			{
+				"name": "Single ticket",
+				"price": "€ 8",
+				"reduced": "€ 5",
+				"desc": "For each single screening of the festival."
+			},
+			{
+				"name": "Festival Pass",
+				"price": "€ 60",
+				"reduced": "€ 40",
+				"desc": "Unlimited access to all screenings of the edition."
+			},
+			{
+				"name": "Weekend Pass",
+				"price": "€ 25",
+				"reduced": "€ 15",
+				"desc": "Access to all screenings of the weekend."
+			}
+		],
+		"reduced_label": "reduced",
+		"riduzioni_label": "Reductions",
+		"riduzioni": [
+			{ "cat": "Under 18", "what": "Reduced ticket" },
+			{ "cat": "University students", "what": "Reduced ticket" },
+			{ "cat": "Over 65", "what": "Reduced ticket" },
+			{ "cat": "Children under 6", "what": "Free admission" }
+		],
+		"box_office_label": "Box Office",
+		"box_office_rows": [
+			{ "cat": "Venue", "value": "Official festival venue — Rome" },
+			{ "cat": "Dates", "value": "15 — 26 October 2026" },
+			{ "cat": "Hours", "value": "10:00 — 20:30, every day" },
+			{ "cat": "Info", "value": "segreteriaalice@gmail.com" }
+		],
+		"cta_band_text": "Buy your tickets through the official online box office.",
+		"cta_button": "Go to Clappit box office",
+		"block_accrediti_label": "02 — Accreditation",
+		"block_accrediti_title_html": "For<br /><em>professionals.</em>",
+		"accrediti": [
+			{
+				"name": "Press",
+				"label": "Press",
+				"desc": "Reserved for journalists, photographers, bloggers and media operators. Free accreditation upon presentation of press credentials.",
+				"email": "press@alicenellacitta.com"
+			},
+			{
+				"name": "Industry",
+				"label": "Professional",
+				"desc": "For producers, distributors, authors, agents and audiovisual operators. Professional rate accreditation.",
+				"email": "industry@alicenellacitta.com"
+			},
+			{
+				"name": "Schools",
+				"label": "Education",
+				"desc": "Packages for classes with morning screenings and workshops. Registration through the referring teacher.",
+				"email": "scuole@alicenellacitta.com"
+			}
+		],
+		"final_cta_title_html": "Ready to<br /><em>start?</em>",
+		"final_cta_button": "Buy tickets"
+	},
+	"news_detail": {
+		"back": "← Back to news",
+		"eyeshot": "News",
+		"date_label": "Published",
+		"category_label": "Category",
+		"body_label": "The article",
+		"share_label": "Share",
+		"explore_label": "Keep reading",
+		"explore_title_html": "More news<br /><em>from the festival</em>",
+		"not_found_title": "Article not found",
+		"not_found_body": "The article you are looking for is no longer available or the link is invalid."
+	},
+	"news": {
+		"label": "News",
+		"title_html": "The latest<br /><em>from the festival</em>",
+		"read_more": "Read the article",
+		"items": [
+			{
+				"date": "14 October 2025",
+				"category": "Programme",
+				"title": "«Good Boy» opens the XXIII edition",
+				"excerpt": "Ben Leonberg's debut horror — told entirely from a dog's perspective — opens the XXIII edition of Alice in the City. After premiering at SXSW, the film went viral, hitting 95% on Rotten Tomatoes."
+			},
+			{
+				"date": "14 October 2025",
+				"category": "Festival",
+				"title": "Fuori Sala: the new format created by Alice in the City",
+				"excerpt": "Fuori Sala takes the festival beyond screenings: cinema, literature and women's empowerment across October and early November, with Robert De Niro arriving in Rome to close the line-up."
+			},
+			{
+				"date": "14 October 2025",
+				"category": "Juries",
+				"title": "Apply for the 2025 Jury pre-selection",
+				"excerpt": "Applications are open for Italian high-school students who want to join the Alice in the City jury. Submit a film review and the required forms by 18 September 2025."
+			}
+		]
+	},
+	"film_detail": {
+		"back": "← Back to programme",
+		"eyeshot": "Film details",
+		"section_label": "Section",
+		"synopsis_label": "Synopsis",
+		"media_label": "Trailer & clips",
+		"clips_caption": "Film clips",
+		"credits_label": "Credits",
+		"director": "Director",
+		"director_label": "About the director",
+		"cast": "Cast",
+		"country": "Country",
+		"year": "Year",
+		"duration": "Running time",
+		"language": "Language",
+		"genre": "Genre",
+		"screenplay": "Screenplay",
+		"cinematography": "Cinematography",
+		"editing": "Editing",
+		"music": "Music",
+		"producers": "Producers",
+		"production": "Production",
+		"original_title": "Original title",
+		"buy_tickets": "Buy tickets",
+		"explore_label": "Keep exploring",
+		"explore_title_html": "More films<br /><em>in the line-up</em>",
+		"not_found_title": "Film not found",
+		"not_found_body": "The film you are looking for is not in the programme or the link is no longer valid."
+	}
+}

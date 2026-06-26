@@ -1,0 +1,385 @@
+{
+	"nav": {
+		"chi_siamo": "Chi siamo",
+		"programma": "Programma",
+		"professionisti": "Professionisti",
+		"bando": "Bando",
+		"stampa": "Stampa",
+		"partner": "Partner",
+		"contatti": "Contatti",
+		"biglietti": "Biglietti"
+	},
+	"common": {
+		"scroll": "Scorri",
+		"all_films": "Tutti i film del festival →",
+		"discover": "Scopri come",
+		"go_box_office": "Vai alla biglietteria"
+	},
+	"footer": {
+		"address": "Via Benaco, 5 — 00199 Roma · 06 85304966",
+		"copyright": "Tutti i diritti riservati",
+		"home_label": "Alice nella Città — home",
+		"newsletter_title": "Newsletter",
+		"newsletter_done": "Grazie! Sei iscritto.",
+		"tagline": "Festival internazionale di cinema per i giovani · Roma",
+		"group_festival": "Festival",
+		"group_pro": "Professionisti"
+	},
+	"hero": {
+		"eyeshot": "XXIV Edizione · Festival Internazionale di Cinema",
+		"title_html": "Più<br />spazio<br />a chi <em>ama</em><br />il cinema.",
+		"meta_edition": "Edizione XXIV",
+		"meta_date": "Ottobre 2026",
+		"meta_city": "Roma"
+	},
+	"manifesto": {
+		"claim_html": "Le storie<br />crescono.<br /><em>Noi anche.</em>",
+		"body": "Alice nella Città è la sezione autonoma e parallela della Festa del Cinema di Roma dedicata ai ragazzi e alle nuove generazioni. Da oltre vent'anni un laboratorio aperto sul cinema, le sue forme e i suoi protagonisti."
+	},
+	"chi_siamo": {
+		"label": "01 — Chi siamo",
+		"title_html": "Cinema,<br />cultura,<br /><em>nuove voci.</em>",
+		"card1_title": "Il manifesto.",
+		"card1_body": "Crediamo nel rovesciamento dei confini festivalieri: non solo anteprime, ma interdipendenza fra persone, idee e pratiche condivise. Un festival che riannoda i fili tra cinema, città e nuove generazioni.",
+		"card2_title": "I fondatori.",
+		"card2_body_html": "Il festival è ideato e diretto da <strong>Gianluca Giannelli</strong> e <strong>Fabia Bettini</strong>, che dal 2002 guidano un progetto culturale dedicato al cinema per ragazzi e giovani adulti.",
+		"link": "Scopri di più su di noi →"
+	},
+	"stats": {
+		"editions": "Edizioni",
+		"films": "Film all'anno",
+		"founded": "Fondazione",
+		"sections": "Sezioni"
+	},
+	"programma": {
+		"label": "02 — Programma",
+		"title_html": "14 sezioni.<br />Un solo<br /><em>festival.</em>",
+		"items": [
+			{
+				"num": "01",
+				"title": "Concorso",
+				"desc": "Anteprime internazionali in gara per il premio Alice."
+			},
+			{
+				"num": "02",
+				"title": "Sintonie",
+				"desc": "Linea condivisa con Alberto Barbera, direttore Mostra di Venezia."
+			},
+			{
+				"num": "03",
+				"title": "Onde Corte",
+				"desc": "Cortometraggi e Academy per i giovani autori emergenti."
+			},
+			{
+				"num": "04",
+				"title": "Fuori Sala",
+				"desc": "Il cinema fuori dalle sale, dentro i luoghi della città."
+			}
+		],
+		"link": "Vai al programma completo →"
+	},
+	"film": {
+		"label": "03 — In programma",
+		"title_html": "Una<br /><em>selezione.</em>",
+		"intro": "Dodici titoli dell'edizione XXIV. Anteprime, opere prime, restauri e proiezioni speciali."
+	},
+	"eventi": {
+		"label": "04 — Eventi speciali",
+		"title_html": "Incontri,<br />masterclass,<br /><em>celebrazioni.</em>",
+		"items": [
+			{
+				"label": "Masterclass",
+				"title": "Kenneth Lonergan",
+				"desc": "Un incontro con il regista premio Oscar di Manchester by the Sea, voce essenziale del cinema indipendente americano."
+			},
+			{
+				"label": "Incontro",
+				"title": "I filmmaker di Anemone",
+				"desc": "Un confronto con gli autori di Anemone, opera prima della loro generazione."
+			},
+			{
+				"label": "Anniversary",
+				"title": "Footloose Celebration",
+				"desc": "Una celebrazione speciale dedicata a un'icona del cinema generazionale."
+			}
+		]
+	},
+	"biglietti_section": {
+		"label": "05 — Accrediti & Biglietteria",
+		"title_html": "Vivi il<br /><em>festival.</em>",
+		"intro": "Acquista i biglietti per le proiezioni, scegli un abbonamento per tutta la durata del festival, o richiedi un accredito professionale.",
+		"card_biglietti": {
+			"label": "A — Biglietti",
+			"title_html": "Acquista<br /><em>online.</em>",
+			"body": "Compra i biglietti singoli, gli abbonamenti e i festival pass attraverso la biglietteria ufficiale del festival. Le vendite aprono a ottobre 2026.",
+			"cta": "Vai alla biglietteria"
+		},
+		"card_accrediti": {
+			"label": "B — Accrediti",
+			"title_html": "Per<br /><em>professionisti.</em>",
+			"body": "Accrediti per stampa, industry, scuole e operatori del settore. Tutte le informazioni e le procedure per partecipare al festival in modo professionale.",
+			"cta": "Scopri come"
+		}
+	},
+	"partner": {
+		"label": "06 — Partner",
+		"title_html": "Con il<br />sostegno <em>di.</em>",
+		"intro": "Alice nella Città è realizzato grazie al contributo e alla collaborazione di istituzioni, enti culturali e media partner che condividono il nostro impegno per il cinema delle nuove generazioni."
+	},
+	"contatti": {
+		"label": "07 — Contatti",
+		"title_html": "Scrivici.<br /><em>Parliamone.</em>",
+		"email_cap": "Email",
+		"phone_cap": "Telefono",
+		"address_cap": "Sede",
+		"social_cap": "Social",
+		"address_value_html": "Via Benaco, 5<br />00199 Roma",
+		"link": "Tutti i contatti →"
+	},
+	"newsletter": {
+		"label": "08 — Newsletter",
+		"title_html": "Resta nel<br /><em>programma.</em>",
+		"title_success_html": "Sei nel<br /><em>programma.</em>",
+		"intro": "Anteprime, inviti agli eventi speciali e il programma del festival in anticipo, direttamente nella tua casella di posta.",
+		"intro_success": "Grazie per esserti iscritto. Riceverai presto i primi aggiornamenti dell'edizione XXIV — ci vediamo a ottobre.",
+		"placeholder": "La tua email...",
+		"submit": "Iscriviti",
+		"submitting": "Invio...",
+		"note": "Niente spam. Solo cinema.",
+		"error": "Inserisci un indirizzo email valido."
+	},
+	"page_chi_siamo": {
+		"eyeshot": "Chi siamo",
+		"title_html": "Cinema,<br />cultura,<br /><em>nuove voci.</em>",
+		"lead": "Da oltre vent'anni Alice nella Città racconta il presente attraverso lo sguardo dei giovani, dando spazio a chi ama il cinema e alle storie che ancora devono essere viste.",
+		"overlap_title_html": "Il<br /><em>manifesto.</em>",
+		"sections": [
+			{
+				"title": "Il manifesto.",
+				"body": "Crediamo nel rovesciamento dei confini festivalieri: non solo la ricerca di anteprime mondiali, ma l'interdipendenza fra le persone, le idee e le pratiche condivise. Un festival che riannoda i fili tra cinema, città e nuove generazioni."
+			},
+			{
+				"title": "La sezione Sintonie.",
+				"body": "Una linea di programma condivisa con Alberto Barbera, direttore della Mostra Internazionale d'Arte Cinematografica di Venezia. Un ponte tra due festival, un dialogo continuo sul cinema d'autore."
+			},
+			{
+				"title": "Oltre i confini della sala.",
+				"body": "Sperimentiamo nuovi spazi per il cinema: proiezioni sulle facciate dei palazzi, eventi all'Auditorium della Nuvola in collaborazione con EUR Spa, e il nuovo format Fuori Sala che porta i film nei luoghi della città."
+			},
+			{
+				"title": "I fondatori.",
+				"body_html": "Il festival è ideato e diretto da <strong>Gianluca Giannelli</strong> e <strong>Fabia Bettini</strong>, che da oltre vent'anni guidano un progetto culturale dedicato al cinema per ragazzi e giovani adulti."
+			}
+		]
+	},
+	"page_programma": {
+		"eyeshot": "Programma · XXIV Edizione",
+		"title_html": "Tutte<br />le sezioni<br />del <em>festival.</em>",
+		"film_label": "Una selezione di film in programma",
+		"film_title_html": "I titoli<br /><em>del festival.</em>",
+		"sections": [
+			{
+				"title": "Concorso",
+				"description": "Anteprime e prime visioni di lungometraggi internazionali in gara per il premio Alice."
+			},
+			{
+				"title": "Film di Apertura",
+				"description": "Il film che inaugura il festival, scelto come manifesto dell'edizione."
+			},
+			{
+				"title": "Fuori Concorso",
+				"description": "Una selezione di opere imperdibili presentate al di fuori della gara ufficiale."
+			},
+			{
+				"title": "Panorama Italia",
+				"description": "Il meglio del nuovo cinema italiano dedicato ai giovani, con il Premio del Pubblico."
+			},
+			{
+				"title": "Sintonie",
+				"description": "Linea di programma condivisa con Alberto Barbera, direttore della Mostra di Venezia."
+			},
+			{
+				"title": "Onde Corte — Concorso",
+				"description": "Cortometraggi internazionali in concorso da tutto il mondo."
+			},
+			{
+				"title": "Onde Corte — Academy",
+				"description": "Spazio dedicato ai giovani autori emergenti e alla formazione."
+			},
+			{
+				"title": "Corti senza confine",
+				"description": "Cortometraggi che attraversano frontiere, lingue e generazioni."
+			},
+			{
+				"title": "Quei Ragazzi",
+				"description": "Una sezione dedicata al racconto dell'adolescenza e dei suoi protagonisti."
+			},
+			{
+				"title": "Serie",
+				"description": "Le migliori produzioni seriali in anteprima dedicate al pubblico giovane."
+			},
+			{
+				"title": "Omaggi",
+				"description": "Tributi e retrospettive ad autori, attori e opere che hanno fatto la storia."
+			},
+			{
+				"title": "Eventi Speciali",
+				"description": "Masterclass, incontri con i filmmaker e celebrazioni in collaborazione."
+			},
+			{
+				"title": "Proiezioni Speciali",
+				"description": "Eventi-evento aperti al pubblico della città, oltre il calendario ufficiale."
+			},
+			{
+				"title": "Fuori Sala",
+				"description": "Il nuovo format del festival: il cinema esce dalle sale e raggiunge i luoghi di Roma."
+			}
+		]
+	},
+	"page_contatti": {
+		"eyeshot": "Contatti",
+		"title_html": "Scrivici.<br /><em>Parliamone.</em>",
+		"email_cap": "Email",
+		"phone_cap": "Telefono",
+		"address_cap": "Sede",
+		"box_office_cap": "Biglietteria",
+		"box_office_value": "Accrediti su Clappit",
+		"address_value_html": "Via Benaco, 5<br />00199 Roma",
+		"overlap_title_html": "Seguici<br /><em>ovunque.</em>",
+		"social_label": "Social"
+	},
+	"page_biglietti": {
+		"eyeshot": "Biglietti & Accrediti",
+		"title_html": "Vivi il<br /><em>festival.</em>",
+		"lead": "Tutto quello che serve per partecipare all'edizione XXIV: biglietti, abbonamenti, riduzioni e accrediti professionali.",
+		"block_biglietti_label": "01 — Biglietti",
+		"block_biglietti_title_html": "Tipologie<br /><em>e prezzi.</em>",
+		"ticket_types": [
+			{
+				"name": "Biglietto singolo",
+				"price": "€ 8",
+				"reduced": "€ 5",
+				"desc": "Per ogni singola proiezione del festival."
+			},
+			{
+				"name": "Festival Pass",
+				"price": "€ 60",
+				"reduced": "€ 40",
+				"desc": "Accesso illimitato a tutte le proiezioni dell'edizione."
+			},
+			{
+				"name": "Weekend Pass",
+				"price": "€ 25",
+				"reduced": "€ 15",
+				"desc": "Accesso a tutte le proiezioni del fine settimana."
+			}
+		],
+		"reduced_label": "ridotto",
+		"riduzioni_label": "Riduzioni",
+		"riduzioni": [
+			{ "cat": "Under 18", "what": "Biglietto ridotto" },
+			{ "cat": "Studenti universitari", "what": "Biglietto ridotto" },
+			{ "cat": "Over 65", "what": "Biglietto ridotto" },
+			{ "cat": "Bambini Under 6", "what": "Ingresso gratuito" }
+		],
+		"box_office_label": "Box Office",
+		"box_office_rows": [
+			{ "cat": "Sede", "value": "Sede ufficiale del festival — Roma" },
+			{ "cat": "Date", "value": "15 — 26 Ottobre 2026" },
+			{ "cat": "Orari", "value": "10:00 — 20:30, tutti i giorni" },
+			{ "cat": "Info", "value": "segreteriaalice@gmail.com" }
+		],
+		"cta_band_text": "Acquista i biglietti tramite la biglietteria ufficiale online.",
+		"cta_button": "Vai alla biglietteria Clappit",
+		"block_accrediti_label": "02 — Accrediti",
+		"block_accrediti_title_html": "Per<br /><em>professionisti.</em>",
+		"accrediti": [
+			{
+				"name": "Stampa",
+				"label": "Press",
+				"desc": "Riservato a giornalisti, fotografi, blogger e operatori del settore media. Richiesta gratuita con presentazione del tesserino.",
+				"email": "press@alicenellacitta.com"
+			},
+			{
+				"name": "Industry",
+				"label": "Professional",
+				"desc": "Per produttori, distributori, autori, agenti e operatori del settore audiovisivo. Accredito a tariffa professionale.",
+				"email": "industry@alicenellacitta.com"
+			},
+			{
+				"name": "Scuole",
+				"label": "Education",
+				"desc": "Pacchetti dedicati alle classi con proiezioni mattutine e laboratori. Iscrizione tramite il docente referente.",
+				"email": "scuole@alicenellacitta.com"
+			}
+		],
+		"final_cta_title_html": "Pronto a<br /><em>iniziare?</em>",
+		"final_cta_button": "Acquista biglietti"
+	},
+	"news_detail": {
+		"back": "← Torna alle news",
+		"eyeshot": "News",
+		"date_label": "Pubblicato",
+		"category_label": "Categoria",
+		"body_label": "L'articolo",
+		"share_label": "Condividi",
+		"explore_label": "Continua a leggere",
+		"explore_title_html": "Altre news<br /><em>dal festival</em>",
+		"not_found_title": "Articolo non trovato",
+		"not_found_body": "L'articolo che cerchi non è più disponibile o l'indirizzo non è valido."
+	},
+	"news": {
+		"label": "News",
+		"title_html": "Le ultime<br /><em>dal festival</em>",
+		"read_more": "Leggi l'articolo",
+		"items": [
+			{
+				"date": "14 ottobre 2025",
+				"category": "Programmazione",
+				"title": "«Good Boy» è il film d'apertura della XXIII edizione",
+				"excerpt": "L'horror d'esordio di Ben Leonberg — raccontato dal punto di vista di un cane — apre la XXIII edizione di Alice nella Città. Dopo l'anteprima a SXSW, il film è diventato un caso virale, con il 95% su Rotten Tomatoes."
+			},
+			{
+				"date": "14 ottobre 2025",
+				"category": "Festival",
+				"title": "Nasce Fuori Sala, il nuovo format ideato da Alice nella Città",
+				"excerpt": "Fuori Sala è il programma che porta il festival fuori dalle proiezioni: cinema, letteratura ed empowerment femminile attraverso ottobre e l'inizio di novembre, con l'arrivo di Robert De Niro a Roma a chiudere il cartellone."
+			},
+			{
+				"date": "14 ottobre 2025",
+				"category": "Giurie",
+				"title": "Partecipa alla preselezione della Giuria 2025",
+				"excerpt": "Apertura delle candidature per gli studenti delle scuole secondarie italiane che vogliono far parte della giuria di Alice nella Città. Recensione di un film e modulistica entro il 18 settembre 2025."
+			}
+		]
+	},
+	"film_detail": {
+		"back": "← Torna al programma",
+		"eyeshot": "Scheda film",
+		"section_label": "Sezione",
+		"synopsis_label": "Sinossi",
+		"media_label": "Trailer e clip",
+		"clips_caption": "Clip dal film",
+		"credits_label": "Crediti",
+		"director": "Regia",
+		"director_label": "Il regista",
+		"cast": "Cast",
+		"country": "Paese",
+		"year": "Anno",
+		"duration": "Durata",
+		"language": "Lingua",
+		"genre": "Genere",
+		"screenplay": "Sceneggiatura",
+		"cinematography": "Fotografia",
+		"editing": "Montaggio",
+		"music": "Musiche",
+		"producers": "Produttori",
+		"production": "Produzione",
+		"original_title": "Titolo originale",
+		"buy_tickets": "Acquista biglietti",
+		"explore_label": "Continua a esplorare",
+		"explore_title_html": "Altri film<br /><em>in programma</em>",
+		"not_found_title": "Film non trovato",
+		"not_found_body": "Il film che cerchi non è in programma o l'indirizzo non è più valido."
+	}
+}
