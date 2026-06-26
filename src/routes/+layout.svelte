@@ -3,11 +3,16 @@
 	import { onMount } from 'svelte';
 	import { t, locale, setLocale, initLocale, type Locale } from '$lib/i18n';
 	import { reveal } from '$lib/reveal';
+	import { TICKETS_URL } from '$lib/festival-images';
 
 	let { children } = $props();
 
 	const LOGO_URL =
 		'https://alicenellacitta.com/wp-content/themes/pooel/assets/images/logo-dark.png';
+
+	// Gli unici 2 link esterni del contenuto: biglietteria (Clappit) e iscrivi
+	// la tua opera (FilmFreeway). TICKETS_URL è condiviso con la home.
+	const FILMFREEWAY_URL = 'https://filmfreeway.com/alicenellacitta';
 
 	// Landing: navbar minimale — solo "Chi siamo" + switch lingua.
 	const nav = [
@@ -135,6 +140,22 @@
 						{$t(tKey)}
 					</a>
 				{/each}
+
+				<!-- Iscrivi la tua opera → FilmFreeway (link esterno, stile testo) -->
+				<a href={FILMFREEWAY_URL} target="_blank" rel="noopener" onclick={closeMenu}>
+					{$locale === 'it' ? 'Iscrivi la tua opera' : 'Submit your film'}
+				</a>
+
+				<!-- Biglietteria → Clappit (link esterno, stile bottone) -->
+				<a
+					class="primary-nav"
+					href={TICKETS_URL}
+					target="_blank"
+					rel="noopener"
+					onclick={closeMenu}
+				>
+					{$locale === 'it' ? 'Biglietteria' : 'Tickets'}
+				</a>
 			</nav>
 
 			<!-- IT/EN: sempre visibile nella barra (anche su mobile, fuori dal menu) -->
