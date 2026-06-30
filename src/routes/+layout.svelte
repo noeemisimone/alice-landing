@@ -19,25 +19,6 @@
 	const CHATGPT_URL = `https://chatgpt.com/?q=${encodeURIComponent(AI_PROMPT)}`;
 	const CLAUDE_URL = `https://claude.ai/new?q=${encodeURIComponent(AI_PROMPT)}`;
 
-	// Scala la wordmark gigante finché riempie la larghezza disponibile su una riga.
-	function fitText(node: HTMLElement) {
-		const fit = () => {
-			const parent = node.parentElement;
-			if (!parent) return;
-			const available = parent.clientWidth;
-			const natural = node.getBoundingClientRect().width;
-			if (!available || !natural) return;
-			const current = parseFloat(getComputedStyle(node).fontSize) || 100;
-			node.style.fontSize = (current * available) / natural - 0.5 + 'px';
-		};
-		const raf = () => requestAnimationFrame(fit);
-		raf();
-		if (document.fonts?.ready) document.fonts.ready.then(raf);
-		const ro = new ResizeObserver(raf);
-		if (node.parentElement) ro.observe(node.parentElement);
-		return { destroy: () => ro.disconnect() };
-	}
-
 	// Ombra della navbar: compare appena si inizia a scrollare, così resta
 	// distinguibile sul contenuto chiaro senza una linea sempre presente.
 	let scrolled = $state(false);
@@ -213,16 +194,10 @@
 			</div>
 		</div>
 
-		<!-- Copyright + note legali -->
+		<!-- Copyright + privacy -->
 		<div class="ff-copy" use:reveal>
 			<span>© Alice nella Città, {$t('footer.copyright')}, {new Date().getFullYear()}</span>
-		</div>
-
-		<!-- Wordmark gigante -->
-		<div class="ff-wordmark" aria-hidden="true">
-			<span class="ff-line" use:fitText use:reveal={{ distance: 30, duration: 1100, delay: 420 }}>
-				Alice <em>nella</em> Città
-			</span>
+			<a href="/privacy">Privacy</a>
 		</div>
 	</footer>
 </div>
@@ -534,9 +509,10 @@
 		padding-top: var(--header-h, 108px);
 	}
 
-	/* ===================== FOOTER (flim, editoriale) ===================== */
+	/* ===================== FOOTER (blocco nero) ===================== */
 	.footer-flim {
-		background: #ffffff;
+		background: #0a0a0a;
+		color: #fff;
 		padding: 3rem 2.5rem 2rem;
 		display: flex;
 		flex-direction: column;
@@ -613,29 +589,20 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		letter-spacing: 0.12em;
-		color: #0a0a0a;
+		color: #fff;
 		margin: 0;
-		padding: 1.25rem 0 3.5rem;
-		border-top: 1px solid rgba(10, 10, 10, 0.12);
+		padding: 1.5rem 0 0.5rem;
+		border-top: 1px solid rgba(255, 255, 255, 0.18);
 	}
 
-	/* Wordmark gigante che riempie la larghezza (font scalato via fitText) */
-	.ff-wordmark {
-		display: block;
-		font-weight: 900;
-		letter-spacing: -0.045em;
-		line-height: 0.72;
-		color: #0a0a0a;
-		user-select: none;
-		margin: 0 -2.5rem -2rem;
+	.ff-copy a {
+		text-decoration: none;
+		color: #fff;
+		transition: opacity 0.2s ease;
 	}
 
-	.ff-line {
-		display: inline-block;
-		vertical-align: bottom;
-		white-space: nowrap;
-		line-height: 0.72;
-		font-size: 9.5vw;
+	.ff-copy a:hover {
+		opacity: 0.55;
 	}
 
 	/* ── Tablet/Mobile: menu hamburger + overlay ─────────────────── */
@@ -713,17 +680,11 @@
 		}
 
 		.footer-flim {
-			/* padding-bottom dà aria sotto la wordmark gigante: con line-height 0.72
-			   le lettere sforano il loro box e, senza questo spazio, l'overflow:hidden
-			   del footer le taglierebbe in basso su mobile. */
 			padding: 2rem 1.5rem 1rem;
 		}
 		.ff-top {
 			margin: -2rem -1.5rem 0;
 			padding: 2.5rem 1.5rem 3rem;
-		}
-		.ff-wordmark {
-			margin: 0 -1.5rem;
 		}
 	}
 

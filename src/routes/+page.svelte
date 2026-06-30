@@ -20,8 +20,8 @@
 		name: 'Alice nella Città',
 		description:
 			'Sezione autonoma e parallela della Festa del Cinema di Roma, dedicata ai giovani e alle nuove generazioni.',
-		startDate: '2026-10-15',
-		endDate: '2026-10-26',
+		startDate: '2026-10-14',
+		endDate: '2026-10-25',
 		eventStatus: 'https://schema.org/EventScheduled',
 		eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
 		location: {

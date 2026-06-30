@@ -8,5 +8,5 @@ export const SITE_URL = 'https://www.alicenellacitta.com';
 // non ne specifica una propria. Deve essere un URL assoluto.
 export const DEFAULT_OG_IMAGE = editorial.heroBg;
 
-// Landing: la sitemap include solo la home.
-export const STATIC_PATHS = [''];
+// Landing: la sitemap include la home e la pagina Privacy.
+export const STATIC_PATHS = ['', '/privacy'];
