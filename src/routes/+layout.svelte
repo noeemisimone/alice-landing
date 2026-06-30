@@ -7,17 +7,12 @@
 
 	let { children } = $props();
 
-	const LOGO_URL =
-		'https://alicenellacitta.com/wp-content/themes/pooel/assets/images/logo-dark.png';
+	// Logo col bollino giallo del festival (ritagliato senza date), in static/.
+	const LOGO_URL = '/images/logo-bollino.png';
 
-	// Gli unici 2 link esterni del contenuto: biglietteria (Clappit) e iscrivi
+	// Gli unici 2 link esterni del contenuto: accrediti (Clappit) e iscrivi
 	// la tua opera (FilmFreeway). TICKETS_URL è condiviso con la home.
 	const FILMFREEWAY_URL = 'https://filmfreeway.com/alicenellacitta';
-
-	// Landing: navbar minimale — solo "Chi siamo" + switch lingua.
-	const nav = [
-		{ href: '/chi-siamo', tKey: 'nav.chi_siamo', section: 'chi-siamo', primary: false }
-	];
 	// Prompt pre-compilato per le icone AI (ChatGPT / Claude). Modificalo qui.
 	const AI_PROMPT =
 		"Raccontami la storia di Alice nella Città, il festival cinematografico romano dedicato ai giovani. Come è nato, chi lo ha fondato, com'è cresciuto nel tempo e qual è il suo ruolo oggi nel panorama del cinema internazionale?";
@@ -67,13 +62,6 @@
 
 	function closeMenu() {
 		menuOpen = false;
-	}
-
-	function isActive(sectionHref: string): boolean {
-		const path = page.url.pathname;
-		const hash = page.url.hash;
-		if (path === '/') return hash === '#' + sectionHref.split('#')[1];
-		return false;
 	}
 
 	// Blocca lo scroll del body quando il menu mobile è aperto.
@@ -130,23 +118,12 @@
 
 		<div class="header-end">
 			<nav id="primary-nav" class:is-open={menuOpen}>
-				{#each nav as { href, tKey, section, primary } (href)}
-					<a
-						{href}
-						class:active={isActive(section)}
-						class:primary-nav={primary}
-						onclick={closeMenu}
-					>
-						{$t(tKey)}
-					</a>
-				{/each}
-
 				<!-- Iscrivi la tua opera → FilmFreeway (link esterno, stile testo) -->
 				<a href={FILMFREEWAY_URL} target="_blank" rel="noopener" onclick={closeMenu}>
 					{$locale === 'it' ? 'Iscrivi la tua opera' : 'Submit your film'}
 				</a>
 
-				<!-- Biglietteria → Clappit (link esterno, stile bottone) -->
+				<!-- Richiedi il tuo accredito → Clappit (link esterno, stile bottone) -->
 				<a
 					class="primary-nav"
 					href={TICKETS_URL}
@@ -154,7 +131,7 @@
 					rel="noopener"
 					onclick={closeMenu}
 				>
-					{$locale === 'it' ? 'Biglietteria' : 'Tickets'}
+					{$locale === 'it' ? 'Richiedi il tuo accredito' : 'Request accreditation'}
 				</a>
 			</nav>
 
@@ -202,13 +179,8 @@
 	</main>
 
 	<footer class="footer-flim">
-		<!-- Banda nera: newsletter a sinistra · link a destra -->
+		<!-- Banda nera: blocco "Chiedi all'AI" -->
 		<div class="ff-top">
-			<nav class="ff-col ff-explore" aria-label="Chi siamo">
-				<p class="ff-col-label" use:reveal>{$locale === 'it' ? 'Esplora' : 'Explore'}</p>
-				<a href="/chi-siamo" use:reveal>{$t('nav.chi_siamo')}</a>
-			</nav>
-
 			<div class="ff-connect">
 				<div class="ff-connect-block">
 					<p class="ff-col-label" use:reveal>{$locale === 'it' ? 'Chiedi all’AI' : 'Ask AI'}</p>
@@ -432,7 +404,7 @@
 	}
 
 	.brand img {
-		height: clamp(42px, 5vw, 58px);
+		height: clamp(64px, 7.5vw, 96px);
 		width: auto;
 		display: block;
 	}
@@ -504,8 +476,7 @@
 		transition: border-color 0.15s ease;
 	}
 
-	nav a:hover,
-	nav a.active {
+	nav a:hover {
 		border-bottom-color: #0a0a0a;
 	}
 
@@ -519,8 +490,7 @@
 			transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 	}
 
-	nav a.primary-nav:hover,
-	nav a.primary-nav.active {
+	nav a.primary-nav:hover {
 		background: #333;
 		transform: translateY(-1px);
 	}
@@ -604,149 +574,6 @@
 		margin: 0 0 1.4rem;
 	}
 
-	/* Newsletter */
-	.ff-nl-label {
-		font-size: 0.7rem;
-		font-weight: 700;
-		text-transform: uppercase;
-		letter-spacing: 0.2em;
-		color: #fff;
-		margin: 0 0 1.5rem;
-	}
-
-	.ff-nl-title {
-		font-size: clamp(2.2rem, 5vw, 4.5rem);
-		font-weight: 900;
-		line-height: 0.95;
-		letter-spacing: -0.04em;
-		margin: 0 0 1.5rem;
-		color: #fff;
-	}
-
-	.ff-nl-intro {
-		font-size: 1.05rem;
-		line-height: 1.6;
-		margin: 0 0 2.5rem;
-		color: #bbb;
-		max-width: 460px;
-	}
-
-	.ff-nl-form {
-		max-width: 560px;
-	}
-
-	.ff-nl-row {
-		display: flex;
-		align-items: flex-end;
-		gap: 1.25rem;
-		border-bottom: 2px solid #fff;
-		padding-bottom: 1rem;
-		transition: border-color 0.3s ease;
-	}
-
-	.ff-nl-row.ff-has-error {
-		border-bottom-color: #ff6b6b;
-	}
-
-	.ff-nl-row input {
-		flex: 1;
-		min-width: 0;
-		background: transparent;
-		border: none;
-		outline: none;
-		color: #fff;
-		font-family: inherit;
-		font-size: clamp(1.1rem, 1.6vw, 1.5rem);
-		font-weight: 900;
-		letter-spacing: -0.02em;
-		padding: 0.4rem 0;
-	}
-
-	.ff-nl-row input::placeholder {
-		color: rgba(255, 255, 255, 0.35);
-		font-weight: 700;
-	}
-
-	.ff-nl-row input:disabled {
-		opacity: 0.5;
-	}
-
-	.ff-nl-btn {
-		background: #fff;
-		color: #0a0a0a;
-		border: none;
-		font-family: inherit;
-		font-weight: 700;
-		text-transform: uppercase;
-		letter-spacing: 0.08em;
-		font-size: 0.8rem;
-		padding: 0.85rem 1.5rem;
-		cursor: pointer;
-		flex-shrink: 0;
-		transition: opacity 0.2s ease;
-	}
-
-	.ff-nl-btn span {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.5rem;
-	}
-
-	.ff-nl-btn:hover {
-		opacity: 0.8;
-	}
-
-	.ff-nl-btn:disabled {
-		opacity: 0.5;
-		cursor: not-allowed;
-	}
-
-	.ff-nl-btn .arrow {
-		display: inline-block;
-		transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-	}
-
-	.ff-nl-btn:hover .arrow {
-		transform: translateX(4px);
-	}
-
-	.ff-nl-note,
-	.ff-nl-error {
-		margin: 1rem 0 0;
-		font-size: 0.72rem;
-		font-weight: 700;
-		text-transform: uppercase;
-		letter-spacing: 0.15em;
-	}
-
-	.ff-nl-note {
-		color: #888;
-	}
-
-	.ff-nl-error {
-		color: #ff6b6b;
-	}
-
-	.ff-col {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 0.55rem;
-	}
-
-	.ff-col a {
-		text-decoration: none;
-		font-size: 1rem;
-		font-weight: 400;
-		color: #fff;
-		line-height: 1.45;
-		transition: opacity 0.2s ease;
-	}
-
-	.ff-col a:hover {
-		opacity: 0.55;
-	}
-
 	/* Riga di icone social (orizzontale) — incluse ChatGPT e Claude */
 	.ff-socials {
 		display: flex;
@@ -790,21 +617,6 @@
 		margin: 0;
 		padding: 1.25rem 0 3.5rem;
 		border-top: 1px solid rgba(10, 10, 10, 0.12);
-	}
-
-	.ff-legal {
-		display: inline-flex;
-		gap: 1.25rem;
-	}
-
-	.ff-legal a {
-		text-decoration: none;
-		color: #0a0a0a;
-		transition: opacity 0.2s ease;
-	}
-
-	.ff-legal a:hover {
-		opacity: 0.55;
 	}
 
 	/* Wordmark gigante che riempie la larghezza (font scalato via fitText) */
@@ -861,8 +673,7 @@
 			padding-bottom: 0;
 		}
 
-		nav a:hover,
-		nav a.active {
+		nav a:hover {
 			border-bottom: none;
 			opacity: 0.6;
 		}
@@ -910,22 +721,6 @@
 		.ff-top {
 			margin: -2rem -1.5rem 0;
 			padding: 2.5rem 1.5rem 3rem;
-		}
-		.ff-nl-row {
-			flex-direction: column;
-			align-items: stretch;
-			gap: 1rem;
-			border-bottom: none;
-		}
-		.ff-nl-row input {
-			border-bottom: 2px solid #fff;
-			padding-bottom: 0.75rem;
-		}
-		.ff-nl-btn {
-			width: 100%;
-		}
-		.ff-nl-btn span {
-			justify-content: center;
 		}
 		.ff-wordmark {
 			margin: 0 -1.5rem;
